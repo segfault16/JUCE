@@ -220,14 +220,14 @@ private:
             addMethod (@selector (accessibilityPerformEscape), accessibilityPerformEscape);
 
            #if JUCE_IOS_CONTAINER_API_AVAILABLE
-            if (@available (iOS 11.0, *))
-            {
-                addMethod (@selector (accessibilityDataTableCellElementForRow:column:), getAccessibilityDataTableCellElementForRowColumn);
-                addMethod (@selector (accessibilityRowCount),                           getAccessibilityRowCount);
-                addMethod (@selector (accessibilityColumnCount),                        getAccessibilityColumnCount);
-                addMethod (@selector (accessibilityRowRange),                           getAccessibilityRowIndexRange);
-                addMethod (@selector (accessibilityColumnRange),                        getAccessibilityColumnIndexRange);
-            }
+            // if (@available (iOS 11.0, *))
+            // {
+            //     addMethod (@selector (accessibilityDataTableCellElementForRow:column:), getAccessibilityDataTableCellElementForRowColumn);
+            //     addMethod (@selector (accessibilityRowCount),                           getAccessibilityRowCount);
+            //     addMethod (@selector (accessibilityColumnCount),                        getAccessibilityColumnCount);
+            //     addMethod (@selector (accessibilityRowRange),                           getAccessibilityRowIndexRange);
+            //     addMethod (@selector (accessibilityColumnRange),                        getAccessibilityColumnIndexRange);
+            // }
            #endif
 
             if (elementType == Type::textElement)
